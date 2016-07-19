@@ -144,8 +144,10 @@ footer .bc-info {
 	padding: 0.5em 1em;
 	background: #fff;
 }
-.loop-wrap article {
-    margin-bottom: 2em;
+.loop-wrap .box-item {
+	background: #e4eaea;
+	background-clip: content-box;
+	margin-bottom: 1.5em;
 }
 .loop-wrap .entry-content-loop {
 	padding: 1em;

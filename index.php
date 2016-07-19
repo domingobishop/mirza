@@ -24,7 +24,7 @@
                                 <?php if (have_posts()) : ?>
                                     <?php /* The loop */ ?>
                                     <?php while (have_posts()) : the_post(); ?>
-                                    <div class="col-md-4">
+                                    <div class="col-md-4 box-item">
                                         <article id="post-<?php the_ID(); ?>">
                                             <?php if (has_post_thumbnail() && !post_password_required() && !is_attachment()) : ?>
                                                 <div class="entry-thumbnail">
@@ -50,12 +50,14 @@
                                 <?php else : ?>
                                     <h1>No content</h1>
                                 <?php endif; ?>
-                                <nav>
-                                    <ul class="pager">
-                                        <li class="previous"><?php next_posts_link( '&#8249; Older posts' ); ?></li>
-                                        <li class="next"><?php previous_posts_link( 'Newer posts &#8250;' ); ?></li>
-                                    </ul>
-                                </nav>
+                                <div class="col-md-12">
+                                    <nav>
+                                        <ul class="pager">
+                                            <li class="previous"><?php next_posts_link( '&#8249; Older posts' ); ?></li>
+                                            <li class="next"><?php previous_posts_link( 'Newer posts &#8250;' ); ?></li>
+                                        </ul>
+                                    </nav>
+                                </div>
                             </div>
                     </div>
                 </div>
